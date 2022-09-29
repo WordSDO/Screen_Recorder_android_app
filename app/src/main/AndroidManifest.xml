@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fttotal.screenrecorder">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.fttotal.screenrecorder.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ScreenRecorder">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name="com.fttotal.screenrecorder.activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ScreenRecorder.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fttotal.screenrecorder.activities.SettingsActivity"
+            android:theme="@style/Theme.ScreenRecorder.NoActionBar" />
+        <activity
+            android:name="com.fttotal.screenrecorder.MainActivity"
+            android:theme="@style/Theme.ScreenRecorder.NoActionBar" />
+
+        <service
+            android:name="com.fttotal.screenrecorder.services.HBService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <activity
+            android:name="com.fttotal.screenrecorder.activities.VideoTrimmerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/VideoTrimmerTheme" />
+
+        <!--    <activity android:name=".activities.TrimmerVideoActivity"
+                android:theme="@style/Theme.ScreenRecorder.NoActionBar"/>-->
+        <activity
+            android:name="com.fttotal.screenrecorder.activities.ImagePreviewActivity"
+            android:theme="@style/Theme.ScreenRecorder.NoActionBar" />
+        <activity
+            android:name="com.fttotal.screenrecorder.activities.VideoPlayerActivity"
+            android:theme="@style/Theme.ScreenRecorder.NoActionBar" />
+
+        <receiver android:name="com.fttotal.screenrecorder.receivers.RecordingServiceStopReceiver" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.fttotal.screenrecorder.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <!--  <service
+              android:name="com.hbisoft.hbrecorder.FloatingControlCameraService"
+              android:enabled="true" />
+          <service
+              android:name="com.hbisoft.hbrecorder.FloatingCameraViewService"
+              android:configChanges="orientation"
+              android:exported="false" />
+  -->
+
+        <activity
+            android:name="com.fttotal.screenrecorder.activities.CheckPermissionActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme_Transparent" />
+
+        <service
+            android:name="com.fttotal.screenrecorder.services.ToolsService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.fttotal.screenrecorder.services.FloatingControlBrushService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.fttotal.screenrecorder.services.BrushService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name="com.fttotal.screenrecorder.services.FloatingControlCaptureService"
+            android:enabled="true" />
+        <service
+            android:name="com.fttotal.screenrecorder.services.FloatingSSCapService"
+            android:foregroundServiceType="mediaProjection"
+            android:exported="false"
+            android:enabled="true"/>
+
+        <activity
+            android:name="com.fttotal.screenrecorder.activities.ScreenShotActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme_Transparent" />
+
+    </application>
+
+</manifest>

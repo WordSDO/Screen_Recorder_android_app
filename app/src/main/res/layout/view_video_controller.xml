@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LView"
+    android:background="@color/appBgColor"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="60dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical">
+
+     <com.fttotal.screenrecorder.widgets.rangeseekbar.CrystalRangeSeekbar
+         android:id="@+id/range_seek_bar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:bar_color="@android:color/transparent"
+         app:bar_highlight_color="@android:color/transparent"
+         app:data_type="_integer"
+         android:elevation="4dp"
+         android:layout_marginStart="@dimen/_22sdp"
+         android:layout_marginEnd="@dimen/_22sdp"
+         android:layout_alignParentTop="true"
+         android:padding="@dimen/_7sdp"
+         app:left_thumb_image="@drawable/ic_min_seek"
+         app:right_thumb_image="@drawable/ic_max_seek"
+         />
+
+     <com.fttotal.screenrecorder.widgets.rangeseekbar.CrystalSeekbar
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginStart="@dimen/_28sdp"
+         android:layout_marginEnd="@dimen/_28sdp"
+         app:bar_color="@android:color/transparent"
+         app:bar_highlight_color="@android:color/transparent"
+         app:thumb_color="@android:color/transparent"
+         app:thumb_image="@drawable/ic_vertical_line"
+         android:id="@+id/seekbar_controller"
+         android:elevation="4dp"
+         android:padding="@dimen/_8sdp"
+         />
+
+    <LinearLayout
+        android:id="@+id/view_image"
+        style="@style/LView"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_28sdp"
+        android:layout_marginEnd="@dimen/_28sdp"
+        android:background="@color/appBgColor">
+
+        <ImageView
+            android:id="@+id/image_one"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_two"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_three"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_four"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_five"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_six"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_seven"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/image_eight"
+            style="@style/ImageTrim"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hbisoft.hbrecorder">
+
+    <application tools:targetApi="q">
+
+        <service
+            android:name="com.hbisoft.hbrecorder.ScreenRecordService"
+            android:foregroundServiceType="mediaProjection"
+            tools:targetApi="q" />
+
+        <receiver android:name="com.hbisoft.hbrecorder.NotificationReceiver" />
+
+        <service
+            android:name="com.hbisoft.hbrecorder.FloatingControlCameraService"
+            android:enabled="true" />
+        <service
+            android:name="com.hbisoft.hbrecorder.FloatingCameraViewService"
+            android:configChanges="orientation"
+            android:exported="false" />
+
+    </application>
+</manifest>

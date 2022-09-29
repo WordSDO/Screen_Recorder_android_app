@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_videos"
+        android:icon="@drawable/ic_round_videocam_24"
+        app:cnb_backgroundColor="@color/colorRed"
+        app:cnb_iconColor="@color/white"
+        app:cnb_iconTintMode="src_in"
+        android:title="@string/video" />
+    <item
+        android:id="@+id/nav_photos"
+        android:icon="@drawable/ic_images_state"
+        app:cnb_backgroundColor="@color/colorRed"
+        app:cnb_iconColor="@color/white"
+        app:cnb_iconTintMode="src_in"
+        android:title="@string/gallery" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings_state"
+        app:cnb_backgroundColor="@color/colorRed"
+        app:cnb_iconColor="@color/white"
+        app:cnb_iconTintMode="src_in"
+        android:title="@string/setting" />
+
+</menu>

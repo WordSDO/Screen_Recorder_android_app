@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="@dimen/size_bubble_icon"
+        android:layout_height="@dimen/size_bubble_icon"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        android:src="@drawable/ic_brush_service"
+        android:visibility="visible" />
+</LinearLayout>

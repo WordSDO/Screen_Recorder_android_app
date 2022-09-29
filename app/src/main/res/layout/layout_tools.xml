@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#417a7a7a">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tools"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imv_close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_close_theme"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/ic_camera_brush"
+                android:drawablePadding="16dp"
+                android:text="@string/screenshots"
+                android:textColor="@color/text_color2"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/sw_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sw_capture"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="16dp"
+                android:text="@string/camera"
+                android:textColor="@color/text_color2"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/ic_record_tools"
+                app:drawableTint="@color/text_color" />
+
+            <Switch
+                android:id="@+id/sw_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sw_capture"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sw_camera"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="16dp"
+                android:text="@string/brush"
+                android:textColor="@color/text_color2"
+                android:textSize="16sp"
+                app:drawableLeftCompat="@drawable/ic_brush"
+                app:drawableTint="@color/text_color" />
+
+            <Switch
+                android:id="@+id/sw_brush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sw_camera"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

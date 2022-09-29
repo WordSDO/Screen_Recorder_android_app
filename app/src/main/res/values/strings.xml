@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Easy Screen Recorder</string>
+
+    <string name="admob_app_id">ca-app-pub-3247218134412060~5582681350</string>
+    <string name="admob_banner_ad_id">ca-app-pub-3247218134412060/6376393431</string>
+    <string name="admob_interstial_ad_id">ca-app-pub-3247218134412060/9086317251</string>
+    <string name="admob_native_ad_unit">ca-app-pub-3247218134412060/9290826225</string>
+    <string name="admob_openapp_ad_unit">ca-app-pub-3247218134412060/3673691550</string>
+    <string name="admob_reward_video_ad">ca-app-pub-3247218134412060/2916989569</string>
+
+
+    <string name="more_app_id">8739035629972932681</string>
+    <string name="privacy_policy_link">https://ftotal-screen-recorder.blogspot.com/p/privacy-and-policy.html</string>
+    <string name="feedback_mail_id">div.yanshkshah@gmail.com</string>
+
+    <string name="content_text">Demo running.</string>
+    <string name="copy">Copy</string>
+    <string name="file_create_error">File create error</string>
+    <string name="file_created">File created</string>
+
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="key_audio_source">key_audio_source</string>
+    <string name="key_common_countdown">key_common_countdown</string>
+    <string name="key_not_found">Key not found</string>
+    <string name="key_output_format">key_output_format</string>
+    <string name="key_record_audio">key_record_audio</string>
+    <string name="key_reward_video">key_reward_video</string>
+    <string name="key_show_notification">key_show_notification</string>
+    <string name="key_start_countdown">key_output_format</string>
+    <string name="key_video_bitrate">key_video_bitrate</string>
+    <string name="key_video_encoder">key_video_encoder</string>
+    <string name="key_video_fps">key_video_fps</string>
+    <string name="key_video_resolution">key_video_resolution</string>
+    <string name="mail_content_title">Demo Customize: active</string>
+
+    <string name="native_main_image">native ad display image</string>
+    <string name="not_set">Not set</string>
+    <string name="npa">npa</string>
+
+    <string name="permission_audio">No audio recording permission. \nAll audio function is disabled</string>
+    <string name="permission_audio_recording_reason">Audio recording permission is necessary for movie capture with audio.</string>
+    <string name="permission_audio_recording_request">Audio recording permission is necessary for movie capture with audio.</string>
+    <string name="permission_audio_streaming_reason">Audio recording permission is necessary for streaming with audio.</string>
+    <string name="permission_audio_streaming_request">Audio recording permission is necessary for streaming with audio.</string>
+    <string name="permission_camera">No camera access permission</string>
+    <string name="permission_camera_finish">No camera access permission. \nApp will finish soon</string>
+    <string name="permission_camera_reason">Camera access permission is necessary for fallback to built in camera.</string>
+    <string name="permission_camera_request">Camera access permission is necessary for fallback to built in camera.</string>
+    <string name="permission_ext_storage">No permission of writing external storage. \nMovie/still image capturing are disabled.</string>
+    <string name="permission_ext_storage_finish">No writing external storage permission. \nApp will finish soon</string>
+    <string name="permission_ext_storage_reason">Permission of writing external storage is necessary for movie/still image capturing.</string>
+    <string name="permission_ext_storage_request">Permission of writing external storage is necessary for movie/still image capturing.</string>
+    <string name="permission_location">No location access permission</string>
+    <string name="permission_location_finish">No location access permission. \nApp will finish soon</string>
+    <string name="permission_location_reason">Location access permission is necessary for %s</string>
+    <string name="permission_location_request">Location access permission is necessary for %s</string>
+    <string name="permission_network">No network access permission.</string>
+    <string name="permission_network_finish">No network access permission. \nApp will finish soon</string>
+    <string name="permission_network_reason">Network access permission is necessary for streaming.</string>
+    <string name="permission_network_request">Network access permission is necessary for streaming.</string>
+    <string name="permission_title">Regarding permission</string>
+    <string name="pref_drive_folderId">pref_drive_folderId</string>
+    <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
+    <string name="prefs">Preferences</string>
+
+
+    <string name="scale_type_inch">inch scale</string>
+    <string name="scale_type_mm">mm scale</string>
+    <string name="scale_type_none">none</string>
+    <string name="search_menu_title">Search</string>
+    <string name="setting_audio_source">setting_audio_source</string>
+    <string name="setting_camera_mode">setting_camera_mode</string>
+    <string name="setting_camera_position">setting_camera_position</string>
+    <string name="setting_camera_size">setting_camera_size</string>
+    <string name="setting_video_bitrate">setting_video_bitrate</string>
+    <string name="setting_video_fps">setting_video_fps</string>
+    <string name="setting_video_resolution">setting_video_resolution</string>
+    <string name="shareApp">Record your mobile screen any time!</string>
+
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="summary_record_audio">Should audio be recorded</string>
+    <string name="summary_video_resolution">Specify video size</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_record_audio">Record Audio</string>
+    <string name="title_reward_video">Remove Watermark</string>
+    <string name="title_video_resolution">Resolution</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_done">Done</string>
+    <string name="txt_edt_video">Edit Video</string>
+    <string name="txt_empty" />
+    <string name="txt_smaller">Video should be smaller than</string>
+    <string name="txt_trimming_video">Trimming Video…</string>
+
+    <string name="default_audio_source">Microphone</string>
+    <string name="default_camera_mode">Front</string>
+    <string name="default_camera_position">Bottom Right</string>
+    <string name="default_camera_size">Medium</string>
+    <string name="default_floatingview_channel_id">default_floatingview_channel</string>
+    <string name="default_floatingview_channel_name">Default Channel</string>
+    <string name="default_setting_bitrate">-1</string>
+    <string name="default_setting_countdown">3</string>
+    <string name="default_setting_fps">30</string>
+    <string name="default_setting_orientation">Auto</string>
+    <string name="default_setting_resolution">Default</string>
+    <string name="editVideo">Edit Video</string>
+    <string name="countDown">Countdown</string>
+    <string name="noRecordingFound">No recordings found!</string>
+    <string name="allowStoragePermissionMsg">Allow storage permission to see recordings</string>
+    <string name="noScreenshotFound">No screenshots found!</string>
+    <string name="allowStoragePermssMsg">Allow storage permission to see screenshots</string>
+    <string name="video">Video</string>
+    <string name="gallery">Gallery</string>
+    <string name="setting">Setting</string>
+    <string name="settings">Settings</string>
+    <string name="recordingCompleted">Recording Completed</string>
+    <string name="wouldYouLikeRecordVideo">Would you like to watch your recorded video?</string>
+    <string name="deleteVideo">Delete Video</string>
+    <string name="feedback">Feedback</string>
+    <string name="tellFriends">Tell friends</string>
+    <string name="moreApps">More Apps</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="videos">Videos</string>
+    <string name="screenshots">Screenshots</string>
+    <string name="screenshots_permm">Are you sure to take Screenshot?</string>
+    <string name="deletingTitle">Deleting…</string>
+    <string name="deletingMsg">Are you sure to delete this video?</string>
+    <string name="ok">OK</string>
+    <string name="running">Running</string>
+    <string name="recordingNotificationMsg">Record your screen while using any app</string>
+    <string name="settingsNotSupported">Some settings are not supported by your device</string>
+    <string name="unableToRecord">Unable to record screen, please try again</string>
+    <string name="preview">Preview</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="deleteSSMsg">Are you sure to delete this screenshot?</string>
+    <string name="caution">Caution!</string>
+    <string name="trimming_video_suceess">Recording trimmed successfully</string>
+    <string name="drwaerOverlayPermission">Draw Overly Permission not Allowed</string>
+    <string name="recordingPermissionNotGranted">Recording display permission not available.</string>
+    <string name="recordingDeleted">Recording Deleted</string>
+    <string name="screenshotsDeleted">Screenshot Deleted</string>
+    <string name="brush">Brush</string>
+    <string name="camera">Camera</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="floating_ball">Floating Ball</string>
+    <string name="tools">Tools</string>
+    <string name="preference_vibrate_key">vibrate</string>
+    <string name="size">size</string>
+    <string name="permission_deny">Permission Denied</string>
+    <string name="preference_floating_control_key">floating_controls</string>
+    <string name="msg_for_storge_alert">This app needs storage permission.</string>
+
+
+</resources>

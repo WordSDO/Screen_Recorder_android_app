@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circle"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgRec"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_recording_off_lite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPause"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_pause_lite"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+
+    <ImageView
+        android:id="@+id/imgResume"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_resume_lite"
+        android:visibility="gone"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+
+
+    <ImageView
+        android:id="@+id/imgStart"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_bubble_recording_lite"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+
+    <ImageView
+        android:id="@+id/imgStop"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_stop_lite"
+        android:visibility="gone"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+
+    <ImageView
+        android:id="@+id/imgToolbox"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_toolbox_lite"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_quit_lite"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+
+    <ImageView
+        android:id="@+id/imgScreenshot"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:visibility="gone"
+        android:src="@drawable/ic_ss_lite"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="@dimen/recording_icon_square"
+        android:layout_height="@dimen/recording_icon_square"
+        android:src="@drawable/ic_setting_lite"
+        android:visibility="gone"
+        app:layout_constraintCircle="@+id/imgRec"
+        app:layout_constraintCircleAngle="150"
+        app:layout_constraintCircleRadius="@dimen/recording_button_distance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:iconSpaceReserved="false">
+
+    <com.fttotal.screenrecorder.helpers.MyPreferenceCategory
+        android:title="Common">
+
+        <EditTextPreference
+            android:defaultValue="@string/default_setting_countdown"
+            android:icon="@drawable/ic_pref_countdown"
+            android:inputType="number"
+            android:key="@string/key_common_countdown"
+            android:title="@string/countDown"
+            />
+
+        <androidx.preference.SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_pref_watermark"
+            android:key="@string/key_reward_video"
+            android:summary="Watch a reward video to remove the watermark in the next recording"
+            android:title="@string/title_reward_video" />
+    </com.fttotal.screenrecorder.helpers.MyPreferenceCategory>
+    <com.fttotal.screenrecorder.helpers.MyPreferenceCategory android:title="Audio Configuration">
+        <androidx.preference.SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_pref_record_audio"
+            android:key="@string/key_record_audio"
+            android:summary="@string/summary_record_audio"
+            android:title="@string/title_record_audio" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="2"
+            android:dialogTitle="Audio Source"
+            android:entries="@array/pref_audio_source"
+            android:entryValues="@array/pref_audio_source_values"
+            android:icon="@drawable/ic_pref_audio_source"
+            android:key="@string/key_audio_source"
+            android:summary="Select microphone to be used"
+            android:title="Audio Source" />
+    </com.fttotal.screenrecorder.helpers.MyPreferenceCategory>
+
+    <com.fttotal.screenrecorder.helpers.MyPreferenceCategory android:title="Video Configuration">
+        <androidx.preference.ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Video Encoder"
+            android:entries="@array/pref_video_encoder"
+            android:entryValues="@array/pref_video_resolution_values"
+            android:key="@string/key_video_encoder"
+            android:summary="Select video encoder"
+            android:title="Video encoder"
+            app:isPreferenceVisible="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="4"
+            android:dialogTitle="@string/title_video_resolution"
+            android:entries="@array/pref_video_resolution"
+            android:entryValues="@array/pref_video_resolution_values"
+            android:icon="@drawable/ic_pref_resolution"
+            android:key="@string/key_video_resolution"
+            android:summary="@string/summary_video_resolution"
+            android:title="@string/title_video_resolution" />
+        <androidx.preference.ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="Frame rate"
+            android:entries="@array/pref_video_framerate"
+            android:entryValues="@array/pref_video_resolution_values"
+            android:icon="@drawable/ic_pref_frame_rate"
+            android:key="@string/key_video_fps"
+            android:summary="Set video frame rate"
+            android:title="Frame rate" />
+        <androidx.preference.ListPreference
+            android:defaultValue="5"
+            android:dialogTitle="Bit-rate"
+            android:entries="@array/pref_video_bitrate"
+            android:entryValues="@array/pref_video_resolution_values"
+            android:icon="@drawable/ic_pref_bitrate"
+            android:key="@string/key_video_bitrate"
+            android:summary="Set video bit-rate"
+            android:title="Bit-rate" />
+    </com.fttotal.screenrecorder.helpers.MyPreferenceCategory>
+    <com.fttotal.screenrecorder.helpers.MyPreferenceCategory android:title="More">
+        <androidx.preference.ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Output Format"
+            android:entries="@array/pref_output_format"
+            android:entryValues="@array/pref_video_resolution_values"
+            android:icon="@drawable/ic_pref_output_format"
+            android:key="@string/key_output_format"
+            android:summary="Set output format"
+            android:title="Output Format" />
+    </com.fttotal.screenrecorder.helpers.MyPreferenceCategory>
+</PreferenceScreen>
